@@ -1,38 +1,67 @@
+.vertical-timeline::before {
+    background: rgba(255, 255, 255, 0.25);
+    width: 4px;
+}
+
 .vertical-timeline span {
     color: white;
     font-family: 'Courier Prime', monospace;
 }
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
+.vertical-timeline-element-content {
+    border-radius: 16px !important;
+    box-shadow: 0 16px 32px rgba(2, 10, 24, 0.28) !important;
 }
 
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
-}
-
+.vertical-timeline p,
+.vertical-timeline-element p,
+.vertical-timeline-element h3,
+.vertical-timeline-element h4,
 .vertical-timeline-element span {
     color: rgb(39, 40, 34);
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
     color: white;
+    opacity: 0.9;
 }
 
 .svg-inline--fa {
     color: white;
 }
 
+.timeline-fa {
+    .vertical-timeline-element {
+        margin: 0 0 2.5rem 0;
+    }
+
+    .vertical-timeline-element .vertical-timeline-element-date {
+        position: relative;
+        display: block;
+        float: none;
+        right: auto;
+        left: auto;
+        margin-bottom: 12px;
+        text-align: right;
+        font-family: "Inter", sans-serif;
+        color: rgba(255, 255, 255, 0.92);
+    }
+
+    .vertical-timeline-element-content {
+        margin-left: 58px;
+    }
+
+    .vertical-timeline-element-content-arrow {
+        border-right: 7px solid white !important;
+    }
+}
+
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);
+    }
+
+    .timeline-fa .vertical-timeline-element .vertical-timeline-element-date {
+        color: rgba(255, 255, 255, 0.92);
     }
 }
