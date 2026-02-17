@@ -29,6 +29,7 @@ function App() {
     useEffect(() => {
         document.documentElement.lang = language;
         document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr';
+        document.title = language === 'fa' ? 'علی زینلی' : 'ali zeiynali';
     }, [language]);
 
     useEffect(() => {

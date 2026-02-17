@@ -7,8 +7,9 @@ export const translations = {
             history: 'History',
             projects: 'Projects',
             contact: 'Contact',
-            language: 'FA',
+            language: 'فا',
             languageLabel: 'Switch to Persian',
+            menu: 'Menu',
         },
         hero: {
             name: 'Ali Zeiynali',
@@ -80,6 +81,7 @@ export const translations = {
         },
         footer: {
             text: 'Portfolio designed and developed by',
+            copyright: 'All rights reserved.',
         },
     },
     fa: {
@@ -90,9 +92,10 @@ export const translations = {
             contact: 'ارتباط',
             language: 'EN',
             languageLabel: 'تغییر زبان به انگلیسی',
+            menu: 'منو',
         },
         hero: {
-            name: 'علی زینعلی',
+            name: 'علی زینلی',
             title: 'توسعه دهنده بک اند پایتون و فرانت اند Vue',
             intro: 'تمرکز من روی ساخت بک اند قابل اعتماد با Python و تجربه سریع و تمیز در فرانت اند با Vue.js است',
         },
@@ -161,6 +164,7 @@ export const translations = {
         },
         footer: {
             text: 'این پورتفولیو طراحی و توسعه شده توسط',
+            copyright: 'تمامی حقوق محفوظ است.',
         },
     },
 };

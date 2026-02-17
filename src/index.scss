@@ -1,15 +1,19 @@
-body {
-    margin: 0;
-    font-family: "Inter", "Segoe UI", "Tahoma", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 1.05rem !important;
-    background: #080d19;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --app-font-family: "Inter", sans-serif;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace !important;
-    font-size: 1rem !important;
+html[lang='fa'] {
+    --app-font-family: "Baloo Bhaijaan 2", "Inter", sans-serif;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .main-container {
@@ -32,7 +36,7 @@ a:hover {
 
 p, a, h1, h2, h3, h4, h5, label, button, span {
     color: white;
-    font-family: "Inter", sans-serif;
+    font-family: var(--app-font-family);
 }
 
 #navigation {
@@ -58,34 +62,71 @@ p, a, h1, h2, h3, h4, h5, label, button, span {
         padding: 8px 14px;
         border-radius: 999px;
     }
+}
 
-    svg {
-        cursor: pointer;
-    }
+.nav-links {
+    direction: ltr;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-link-btn {
+    white-space: nowrap;
 }
 
 .toolbar-actions {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.theme-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.14) !important;
 
     svg {
-        padding: 8px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.14);
+        font-size: 1.35rem;
     }
 }
 
 .language-switch {
     border: 1px solid rgba(255, 255, 255, 0.32) !important;
     background: rgba(255, 255, 255, 0.08) !important;
+    min-width: 52px !important;
+    font-weight: 700 !important;
 }
 
 .navigation-bar-responsive {
+    padding: 12px;
+
+    span, p {
+        font-family: var(--app-font-family);
+    }
+}
+
+.drawer-dark {
+    background: rgba(13, 19, 32, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    span, p {
+        color: #ffffff;
+    }
+}
+
+.drawer-light {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(20, 28, 45, 0.1);
+
     span, p {
         color: #0d1116;
-        font-family: "Inter", sans-serif;
     }
+}
+
+.drawer-item {
+    border-radius: 10px !important;
+    margin-top: 4px;
 }
 
 .container {
@@ -139,10 +180,6 @@ p, a, h1, h2, h3, h4, h5, label, button, span {
     }
 
     p, a, h1, h2, h3, h4, h5, label, button, span {
-        color: #0d1116;
-    }
-
-    .navigation-bar svg {
         color: #0d1116;
     }
 
