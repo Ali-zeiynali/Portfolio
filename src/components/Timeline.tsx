@@ -16,17 +16,14 @@ type TimelineProps = {
             description: string;
         }[];
     };
-    language: string;
 };
 
-function Timeline({ timeline, language }: TimelineProps) {
-    const isFa = language === 'fa';
-
+function Timeline({ timeline }: TimelineProps) {
     return (
-        <div id="history" className={isFa ? 'timeline-fa' : ''}>
+        <div id="history">
             <div className="items-container">
                 <h1>{timeline.title}</h1>
-                <VerticalTimeline layout={isFa ? '1-column' : '2-columns'}>
+                <VerticalTimeline layout="2-columns">
                     {timeline.items.map((item, index) => (
                         <VerticalTimelineElement
                             key={index}

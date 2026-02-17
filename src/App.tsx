@@ -28,8 +28,7 @@ function App() {
 
     useEffect(() => {
         document.documentElement.lang = language;
-        document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr';
-        document.title = language === 'fa' ? 'علی زینلی' : 'ali zeiynali';
+        document.title = language === 'fa' ? 'علی زینلی' : 'Ali Zeiynali';
     }, [language]);
 
     useEffect(() => {
@@ -47,8 +46,8 @@ function App() {
             <FadeIn transitionDuration={700}>
                 <Main hero={t.hero} language={language} />
                 <Expertise expertise={t.expertise} />
-                <Timeline timeline={t.timeline} language={language} />
-                <Project title={t.projects.title} />
+                <Timeline timeline={t.timeline} />
+                <Project title={t.projects.title} language={language} />
                 <Contact contact={t.contact} />
             </FadeIn>
             <Footer footer={t.footer} />

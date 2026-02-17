@@ -30,30 +30,17 @@
     color: white;
 }
 
-.timeline-fa {
-    .vertical-timeline-element {
-        margin: 0 0 2.5rem 0;
-    }
+.rtl-mode #history .vertical-timeline {
+    direction: ltr;
+}
 
-    .vertical-timeline-element .vertical-timeline-element-date {
-        position: relative;
-        display: block;
-        float: none;
-        right: auto;
-        left: auto;
-        margin-bottom: 12px;
-        text-align: right;
-        font-family: var(--app-font-family);
-        color: rgba(255, 255, 255, 0.92);
-    }
-
-    .vertical-timeline-element-content {
-        margin-left: 0;
-    }
-
-    .vertical-timeline-element-content-arrow {
-        border-right: 7px solid white !important;
-    }
+.rtl-mode #history .vertical-timeline-element-content,
+.rtl-mode #history .vertical-timeline-element-content p,
+.rtl-mode #history .vertical-timeline-element-content h3,
+.rtl-mode #history .vertical-timeline-element-content h4 {
+    direction: rtl;
+    text-align: right;
+    font-family: var(--app-font-family);
 }
 
 @media screen and (max-width: 1170px) {
@@ -61,7 +48,7 @@
         color: rgb(39, 40, 34);
     }
 
-    .timeline-fa .vertical-timeline-element .vertical-timeline-element-date {
+    .rtl-mode #history .vertical-timeline-element .vertical-timeline-element-date {
         color: rgba(255, 255, 255, 0.92);
     }
 }

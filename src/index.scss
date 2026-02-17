@@ -215,23 +215,18 @@ p, a, h1, h2, h3, h4, h5, label, button, span {
 }
 
 .rtl-mode {
-    direction: rtl;
-
     .items-container,
     .about-section .content,
     .projects-container,
     .skills-container,
     .projects-container .projects-grid .project {
+        direction: rtl;
         text-align: right;
     }
 
     .flex-chips .MuiChip-root {
         margin-left: 0.5em;
         margin-right: 0;
-    }
-
-    .toolbar-actions {
-        flex-direction: row-reverse;
     }
 }
 
