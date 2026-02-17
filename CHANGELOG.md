@@ -21,7 +21,7 @@
 - Added Google Font `Baloo Bhaijaan 2` and enabled automatic Persian font application through `html[lang='fa']`
 - Centered the Contact section card content for better visual balance
 - Increased theme switch control size and replaced Persian language switch label with `فا`
-- Updated dynamic document title to `ali zeiynali` (English) and `علی زینلی` (Persian)
+- Updated dynamic document title to `Ali Zeiynali` (English) and `علی زینلی` (Persian)
 - Added localized copyright text at the end of the page footer
 
 
@@ -30,3 +30,11 @@
 - Hardened Persian layout behavior by removing global `document.dir` mutation and limiting RTL direction to content sections only
 - Prevented Persian top-bar regressions by keeping navigation actions in stable LTR flow while preserving section-level RTL text alignment
 - Upgraded the contact card visuals with a sharper gradient frame, stronger depth, and improved interactive email badge styling
+
+
+## 2026-02-17 (timeline and bilingual project data refinement)
+- Kept Career History timeline layout identical in Persian and English by removing language-based timeline layout switching
+- Added dedicated bilingual project source file at `src/content/projects.ts` and rendered project cards from localized data
+- Updated Projects section component to read titles, descriptions, links, and images from centralized localized content
+- Widened the Contact card container for a more horizontal visual layout
+- Normalized English title casing to `Ali Zeiynali` for document title display
