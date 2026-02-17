@@ -16,7 +16,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 type NavigationProps = {
     mode: string;
@@ -29,6 +29,7 @@ type NavigationProps = {
         contact: string;
         language: string;
         languageLabel: string;
+        menu: string;
     };
 };
 
@@ -36,7 +37,7 @@ function Navigation({ mode, modeChange, languageChange, nav }: NavigationProps) 
     const [mobileOpen, setMobileOpen] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean>(false);
 
-    const navItems = [
+    const navItems: [string, string][] = [
         [nav.expertise, 'expertise'],
         [nav.history, 'history'],
         [nav.projects, 'projects'],
@@ -70,13 +71,13 @@ function Navigation({ mode, modeChange, languageChange, nav }: NavigationProps) 
     };
 
     const drawer = (
-        <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <p className="mobile-menu-top"><ListIcon />Menu</p>
+        <Box className={`navigation-bar-responsive ${mode === 'dark' ? 'drawer-dark' : 'drawer-light'}`} onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+            <p className="mobile-menu-top"><ListIcon />{nav.menu}</p>
             <Divider />
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item[0]} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+                        <ListItemButton className="drawer-item" sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
                             <ListItemText primary={item[0]} />
                         </ListItemButton>
                     </ListItem>
@@ -95,21 +96,19 @@ function Navigation({ mode, modeChange, languageChange, nav }: NavigationProps) 
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
+                        sx={{ mr: 1, display: { sm: 'none' } }}
                     >
                         <MenuIcon />
                     </IconButton>
-                    <div className="toolbar-actions">
+                    <Box className="toolbar-actions">
                         <Button className="language-switch" aria-label={nav.languageLabel} onClick={languageChange}>{nav.language}</Button>
-                        {mode === 'dark' ? (
-                            <LightModeIcon onClick={modeChange} />
-                        ) : (
-                            <DarkModeIcon onClick={modeChange} />
-                        )}
-                    </div>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        <IconButton className="theme-toggle" aria-label="Toggle theme" onClick={modeChange}>
+                            {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
+                        </IconButton>
+                    </Box>
+                    <Box className="nav-links" sx={{ display: { xs: 'none', sm: 'flex' } }}>
                         {navItems.map((item) => (
-                            <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
+                            <Button key={item[0]} className="nav-link-btn" onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
                                 {item[0]}
                             </Button>
                         ))}
@@ -126,7 +125,7 @@ function Navigation({ mode, modeChange, languageChange, nav }: NavigationProps) 
                     }}
                     sx={{
                         display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, top: 12, right: 12, left: 12, height: 'fit-content', borderRadius: '18px', border: 'none', backgroundImage: 'none' },
                     }}
                 >
                     {drawer}

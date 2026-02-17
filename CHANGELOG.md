@@ -13,3 +13,13 @@
 - Reworked card surfaces shadows hover interactions and section spacing across expertise projects timeline and contact for a cleaner modern UI
 - Fixed Persian Career History layout by forcing a stable one-column timeline mode with corrected date positioning in RTL mode
 - Refined Persian copy by removing trailing dot punctuation and improving spacing around English technology words
+
+## 2026-02-17 (rtl and mobile polish)
+- Fixed Persian top navigation stability by preserving desktop nav item order and preventing label wrapping for Career History and other menu links
+- Removed horizontal page overflow by enforcing global `overflow-x: hidden` and correcting RTL timeline content offsets
+- Restyled the mobile side drawer to match dark/light theme aesthetics with improved surface, spacing, and localized menu title
+- Added Google Font `Baloo Bhaijaan 2` and enabled automatic Persian font application through `html[lang='fa']`
+- Centered the Contact section card content for better visual balance
+- Increased theme switch control size and replaced Persian language switch label with `فا`
+- Updated dynamic document title to `ali zeiynali` (English) and `علی زینلی` (Persian)
+- Added localized copyright text at the end of the page footer

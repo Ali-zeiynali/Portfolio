@@ -6,6 +6,7 @@ import '../assets/styles/Footer.scss';
 type FooterProps = {
     footer: {
         text: string;
+        copyright: string;
     };
 };
 
@@ -17,6 +18,7 @@ function Footer({ footer }: FooterProps) {
                 <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
             </div>
             <p>{footer.text} <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer">Ali Zeiynali</a> with 💜</p>
+            <p className="copyright">© {new Date().getFullYear()} {footer.copyright}</p>
         </footer>
     );
 }
