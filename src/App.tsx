@@ -40,7 +40,6 @@ function App() {
             <Navigation
                 mode={mode}
                 modeChange={handleModeChange}
-                language={language}
                 languageChange={handleLanguageChange}
                 nav={t.nav}
             />

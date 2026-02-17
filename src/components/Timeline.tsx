@@ -20,11 +20,13 @@ type TimelineProps = {
 };
 
 function Timeline({ timeline, language }: TimelineProps) {
+    const isFa = language === 'fa';
+
     return (
-        <div id="history">
+        <div id="history" className={isFa ? 'timeline-fa' : ''}>
             <div className="items-container">
                 <h1>{timeline.title}</h1>
-                <VerticalTimeline layout={language === 'fa' ? '1-column-left' : '2-columns'}>
+                <VerticalTimeline layout={isFa ? '1-column' : '2-columns'}>
                     {timeline.items.map((item, index) => (
                         <VerticalTimelineElement
                             key={index}
@@ -32,7 +34,7 @@ function Timeline({ timeline, language }: TimelineProps) {
                             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
                             contentArrowStyle={{ borderRight: '7px solid white' }}
                             date={item.date}
-                            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+                            iconStyle={{ background: '#7c68ff', color: '#ffffff' }}
                             icon={<FontAwesomeIcon icon={faBriefcase} />}
                         >
                             <h3 className="vertical-timeline-element-title">{item.role}</h3>

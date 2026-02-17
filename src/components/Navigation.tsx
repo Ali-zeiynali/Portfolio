@@ -21,7 +21,6 @@ const drawerWidth = 240;
 type NavigationProps = {
     mode: string;
     modeChange: () => void;
-    language: string;
     languageChange: () => void;
     nav: {
         expertise: string;
@@ -33,7 +32,7 @@ type NavigationProps = {
     };
 };
 
-function Navigation({ mode, modeChange, language, languageChange, nav }: NavigationProps) {
+function Navigation({ mode, modeChange, languageChange, nav }: NavigationProps) {
     const [mobileOpen, setMobileOpen] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean>(false);
 
@@ -52,7 +51,7 @@ function Navigation({ mode, modeChange, language, languageChange, nav }: Navigat
         const handleScroll = () => {
             const navbar = document.getElementById('navigation');
             if (navbar) {
-                setScrolled(window.scrollY > navbar.clientHeight);
+                setScrolled(window.scrollY > 16);
             }
         };
 
