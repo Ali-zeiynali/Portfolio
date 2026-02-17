@@ -14,10 +14,10 @@ function Footer({ footer }: FooterProps) {
     return (
         <footer>
             <div>
-                <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon /></a>
-                <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
+                <a href="https://github.com/alizeiynali" target="_blank" rel="noreferrer"><GitHubIcon /></a>
+                <a href="https://www.linkedin.com/in/ali-zeiynali/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
             </div>
-            <p>{footer.text} <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer">Ali Zeiynali</a> with 💜</p>
+            <p>{footer.text} <a href="https://github.com/alizeiynali/react-portfolio-template" target="_blank" rel="noreferrer">Ali Zeiynali</a> with 💜</p>
             <p className="copyright">© {new Date().getFullYear()} {footer.copyright}</p>
         </footer>
     );

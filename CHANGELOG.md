@@ -3,7 +3,7 @@
 ## 2026-02-17
 - Added full bilingual content support (English/Persian) with centralized translation data in `src/content/translations.ts`
 - Implemented language toggle and RTL/LTR switching support with dedicated UI behavior and styling updates
-- Rebranded profile identity from Yuji Sato to Ali Zeiynali in hero and footer text
+- Rebranded profile identity to Ali Zeiynali in hero and footer text
 - Updated expertise focus from React-centric messaging to Python backend + Vue frontend including revised DevOps scope and experience ranges
 - Removed the contact form and replaced it with a clean email-only contact block
 - Refreshed visuals with modern glass-card styling improved navigation bar appearance and polished section presentation
@@ -23,3 +23,10 @@
 - Increased theme switch control size and replaced Persian language switch label with `فا`
 - Updated dynamic document title to `ali zeiynali` (English) and `علی زینلی` (Persian)
 - Added localized copyright text at the end of the page footer
+
+
+## 2026-02-17 (identity cleanup and rtl hardening)
+- Replaced legacy profile links and homepage references with `alizeiynali` links across hero, footer, project links, and package metadata
+- Hardened Persian layout behavior by removing global `document.dir` mutation and limiting RTL direction to content sections only
+- Prevented Persian top-bar regressions by keeping navigation actions in stable LTR flow while preserving section-level RTL text alignment
+- Upgraded the contact card visuals with a sharper gradient frame, stronger depth, and improved interactive email badge styling
