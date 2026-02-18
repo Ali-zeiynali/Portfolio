@@ -101,7 +101,7 @@ function Navigation({ mode, modeChange, languageChange, nav }: NavigationProps) 
                         <MenuIcon />
                     </IconButton>
                     <Box className="toolbar-actions">
-                        <Button className="language-switch" aria-label={nav.languageLabel} onClick={languageChange}>{nav.language}</Button>
+                        <Button className={`language-switch ${/[\u0600-\u06FF]/.test(nav.language) ? 'fa-script' : ''}`} aria-label={nav.languageLabel} onClick={languageChange}>{nav.language}</Button>
                         <IconButton className="theme-toggle" aria-label="Toggle theme" onClick={modeChange}>
                             {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
                         </IconButton>

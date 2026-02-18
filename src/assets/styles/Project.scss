@@ -13,10 +13,13 @@
 
 .projects-container .projects-grid .project {
     text-align: left;
+    border: none;
+    width: 100%;
+    cursor: pointer;
 }
 
-.project h2:hover {
-    text-decoration: underline;
+.project h2 {
+    margin-top: 14px;
 }
 
 .zoom {
@@ -29,6 +32,95 @@
     transform: scale(1.04);
 }
 
+.project-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 9, 16, 0.72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1300;
+    padding: 20px;
+}
+
+.project-modal {
+    width: min(980px, 100%);
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    position: relative;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(14, 20, 33, 0.96);
+    padding: 24px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.14);
+    cursor: pointer;
+}
+
+.modal-image-wrapper {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-main-image {
+    width: min(760px, 100%);
+    max-height: 60vh;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.slider-control {
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.modal-thumbnails {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.thumbnail-btn {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+    line-height: 0;
+}
+
+.thumbnail-btn img {
+    width: 110px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.thumbnail-btn.active {
+    border-color: #8a79ff;
+}
+
 @media screen and (max-width: 900px) {
     .projects-container {
         padding-left: 5%;
@@ -37,5 +129,23 @@
 
     .projects-container .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-modal {
+        padding: 18px;
+    }
+
+    .modal-image-wrapper {
+        gap: 6px;
+    }
+
+    .slider-control {
+        width: 36px;
+        height: 36px;
+    }
+
+    .thumbnail-btn img {
+        width: 92px;
+        height: 58px;
     }
 }
