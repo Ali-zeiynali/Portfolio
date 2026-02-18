@@ -30,13 +30,14 @@ function Timeline({ timeline }: TimelineProps) {
                             className="vertical-timeline-element--work"
                             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
                             contentArrowStyle={{ borderRight: '7px solid white' }}
-                            date={item.date}
+                            date=""
                             iconStyle={{ background: '#7c68ff', color: '#ffffff' }}
                             icon={<FontAwesomeIcon icon={faBriefcase} />}
                         >
                             <h3 className="vertical-timeline-element-title">{item.role}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{item.location}</h4>
                             <p>{item.description}</p>
+                            <div className="timeline-card-date">{item.date}</div>
                         </VerticalTimelineElement>
                     ))}
                 </VerticalTimeline>

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-02-18 (timeline date cards, modal animation, themed scrollbars)
+- Moved work-experience dates out of the vertical timeline side rail and rendered each date inside its corresponding timeline card as a dedicated styled footer section
+- Added animated project modal open/close transitions using `framer-motion` with smooth overlay fade and dialog scale/slide motion
+- Customized modal scrollbar appearance and introduced global themed scrollbar styling for the whole website with dark/light mode variants
+
 ## 2026-02-18
 - Replaced project `link`/`image` fields with an `images` gallery array in localized project data and populated each project with static sample images
 - Redesigned Projects cards to be click-to-open and show only each project's main image in the list view
