@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-02-18 (timeline date cards, modal animation, themed scrollbars)
+- Moved work-experience dates out of the vertical timeline side rail and rendered each date inside its corresponding timeline card as a dedicated styled footer section
+- Added animated project modal open/close transitions using `framer-motion` with smooth overlay fade and dialog scale/slide motion
+- Customized modal scrollbar appearance and introduced global themed scrollbar styling for the whole website with dark/light mode variants
+
+## 2026-02-18
+- Replaced project `link`/`image` fields with an `images` gallery array in localized project data and populated each project with static sample images
+- Redesigned Projects cards to be click-to-open and show only each project's main image in the list view
+- Added an interactive project gallery modal with close controls, overlay-dismiss behavior, thumbnail selection, and next/previous navigation buttons
+- Improved language-switch typography so Persian script (including `فا`) always renders with `Baloo Bhaijaan 2`, and ensured navigation labels follow Persian font styling in FA mode
+- Stabilized English timeline date/arrow layout without affecting Persian timeline alignment, and refined light-theme timeline date color and typography
+
 ## 2026-02-17
 - Added full bilingual content support (English/Persian) with centralized translation data in `src/content/translations.ts`
 - Implemented language toggle and RTL/LTR switching support with dedicated UI behavior and styling updates
