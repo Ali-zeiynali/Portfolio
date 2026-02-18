@@ -6,7 +6,6 @@ type ContactProps = {
     contact: {
         title: string;
         subtitle: string;
-        emailLabel: string;
         email: string;
     };
 };
@@ -20,7 +19,7 @@ function Contact({ contact }: ContactProps) {
                     <p>{contact.subtitle}</p>
                     <a className="email-box" href={`mailto:${contact.email}`}>
                         <EmailOutlinedIcon />
-                        <span>{contact.emailLabel}: {contact.email}</span>
+                        <span>{contact.email}</span>
                     </a>
                 </div>
             </div>

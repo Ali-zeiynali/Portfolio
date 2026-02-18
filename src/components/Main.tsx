@@ -21,16 +21,16 @@ function Main({ hero, language }: MainProps) {
                 </div>
                 <div className="content">
                     <div className="social_icons">
-                        <a href="https://github.com/alizeiynali" target="_blank" rel="noreferrer"><GitHubIcon /></a>
-                        <a href="https://www.linkedin.com/in/ali-zeiynali/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
+                        <a href="https://github.com/ali-zeiynali" target="_blank" rel="noreferrer"><GitHubIcon /></a>
+                        <a href="https://www.linkedin.com/in/azeiynali/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
                     </div>
                     <h1>{hero.name}</h1>
                     <p>{hero.title}</p>
                     <p className={`hero-intro ${language === 'fa' ? 'hero-intro-fa' : ''}`}>{hero.intro}</p>
 
                     <div className="mobile_social_icons">
-                        <a href="https://github.com/alizeiynali" target="_blank" rel="noreferrer"><GitHubIcon /></a>
-                        <a href="https://www.linkedin.com/in/ali-zeiynali/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
+                        <a href="https://github.com/ali-zeiynali" target="_blank" rel="noreferrer"><GitHubIcon /></a>
+                        <a href="https://www.linkedin.com/in/azeiynali/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
                     </div>
                 </div>
             </div>
