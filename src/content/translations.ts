@@ -120,8 +120,9 @@ const en: Translations = {
     hero: {
         name: "Ali Zeiynali",
         title: "Vue Frontend • Python Backend Developer",
-        intro: "I build production-ready web products: fast Vue interfaces, reliable Python backends, and clean APIs. I focus on correctness, performance, and maintainable delivery.",
+        intro: "I build real-world web products from concept to production. My focus is on designing clear architectures, implementing clean and scalable code, and delivering systems that remain stable under growth. I care about correctness, performance, and long-term maintainability — not just shipping features, but building foundations that last.",
     },
+
     expertise: {
         title: "What I Do",
         cards: [
@@ -154,32 +155,25 @@ const en: Translations = {
         title: "Work Experience",
         items: [
             {
-                date: "2022 — Present",
-                role: "Backend-Focused Full-Stack Developer",
-                location: "Remote",
+                date: "1403/04",
+                role: "Senior Software Engineer & Product Manager",
+                location: "Repco",
                 description:
-                    "Own features end-to-end: Python backend design, API contracts, and Vue implementation. Focus on scalable data models, clean delivery, and production stability.",
+                    "Leading product direction and technical architecture. Overseeing backend design, frontend implementation, and delivery strategy while aligning product goals with business needs.",
             },
             {
-                date: "2020 — 2022",
-                role: "Full-Stack Engineer",
-                location: "Laie, HI",
+                date: "1402/04",
+                role: "Web Developer",
+                location: "Anatoa",
                 description:
-                    "Built and maintained product features across backend and frontend. Worked closely with stakeholders, improved internal tooling, and contributed to documentation and team workflows.",
+                    "Developing and maintaining web applications with a focus on clean architecture, API-driven design, and maintainable frontend-backend integration.",
             },
             {
-                date: "2021",
-                role: "Software Engineering Intern",
-                location: "Laie, HI",
-                description:
-                    "Implemented features, integrated third-party APIs, and improved existing code paths with attention to correctness and readability.",
-            },
-            {
-                date: "2020",
+                date: "1401/09",
                 role: "Data Analyst Intern",
-                location: "Tokyo, Japan",
+                location: "Hamta",
                 description:
-                    "Worked with data pipelines and reporting, built Python tooling for analysis, and helped improve process efficiency through automation.",
+                    "Worked on data processing, reporting, and analytical tooling. Assisted in improving operational insights through structured data analysis and automation.",
             },
         ],
     },
@@ -211,7 +205,7 @@ const fa: Translations = {
     hero: {
         name: "علی زینلی",
         title: "فرانت‌اند Vue • بک‌اند Python",
-        intro: "محصولات وب را برای محیط واقعی می‌سازم: رابط سریع و تمیز با Vue، بک‌اند قابل اتکا با Python، و APIهای روشن و قابل نگهداری. تمرکز من روی کیفیت، کارایی و تحویل قابل پیش‌بینی است.",
+        intro: "محصولات وب را از مرحله ایده تا استقرار نهایی می‌سازم. تمرکز من بر طراحی معماری شفاف، پیاده‌سازی کد تمیز و مقیاس‌پذیر، و تحویل سامانه‌هایی است که در رشد و استفاده واقعی پایدار بمانند. برایم صرفاً تحویل قابلیت مهم نیست؛ ساخت زیرساختی ماندگار، دقیق و قابل نگهداری در اولویت است.",
     },
     expertise: {
         title: "حوزه‌های تمرکز",
@@ -245,32 +239,25 @@ const fa: Translations = {
         title: "سوابق کاری",
         items: [
             {
-                date: "۲۰۲۲ — اکنون",
-                role: "توسعه‌دهنده فول‌استک با تمرکز بک‌اند",
-                location: "دورکار",
+                date: "۱۴۰۳/۰۴",
+                role: "برنامه‌نویس ارشد و مدیر محصول",
+                location: "رپکو",
                 description:
-                    "تحویل قابلیت از ابتدا تا انتها: طراحی بک‌اند Python، قراردادهای API، و پیاده‌سازی Vue. تمرکز روی مدل داده مقیاس‌پذیر، تحویل تمیز و پایداری محیط عملیاتی.",
+                    "هدایت فنی محصول، طراحی معماری سیستم و هماهنگی بین تیم فنی و اهداف کسب‌وکار.",
             },
             {
-                date: "۲۰۲۰ — ۲۰۲۲",
-                role: "مهندس فول‌استک",
-                location: "هاوایی",
+                date: "۱۴۰۲/۰۴",
+                role: "برنامه‌نویس وب",
+                location: "آناتوا",
                 description:
-                    "توسعه و نگهداری قابلیت‌های محصول در بک‌اند و فرانت‌اند. همکاری نزدیک با ذی‌نفعان، بهبود ابزارهای داخلی و کمک به مستندسازی و روندهای تیمی.",
+                    "توسعه و نگهداری سامانه‌های وب با تمرکز بر معماری تمیز، طراحی مبتنی بر API و یکپارچگی صحیح بین فرانت‌اند و بک‌اند.",
             },
             {
-                date: "۲۰۲۱",
-                role: "کارآموز مهندسی نرم‌افزار",
-                location: "هاوایی",
-                description:
-                    "پیاده‌سازی قابلیت‌ها، یکپارچه‌سازی APIهای خارجی، و بهبود بخش‌هایی از کد با توجه به خوانایی و صحت عملکرد.",
-            },
-            {
-                date: "۲۰۲۰",
+                date: "۱۴۰۱/۰۹",
                 role: "کارآموز تحلیل داده",
-                location: "توکیو",
+                location: "همتا",
                 description:
-                    "کار با داده و گزارش‌گیری، ساخت ابزارهای تحلیلی با Python، و کمک به بهینه‌سازی فرایندها با اتوماسیون.",
+                    "تحلیل داده، تهیه گزارش و توسعه ابزارهای تحلیلی با Python جهت بهبود تصمیم‌گیری و بهینه‌سازی فرایندها با اتوماسیون.",
             },
         ],
     },
